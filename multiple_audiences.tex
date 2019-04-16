@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{multiaudience}
+
+\title{Multiaudience test with three audiences}
+\author{}
+\date{}
+
+\SetNewAudience{a}
+\SetNewAudience{b}
+\SetNewAudience{c}
+
+\begin{document}
+\maketitle
+
+
+\begin{shownto}{-, b, c}
+    Only a will see this.
+\end{shownto}
+\begin{shownto}{-, a, c}
+    Only b will see this.
+\end{shownto}
+\begin{shownto}{-, a, b}
+    Only c will see this.
+\end{shownto}
+\end{document}
