@@ -1,7 +1,7 @@
 # psht
 
 This bash script compiles a LaTeX document written using the
-`multiaudience' package into multiple pdf files, one for each audience
+`multiaudience` package into multiple pdf files, one for each audience
 specified.
 
 To make it work you must have the

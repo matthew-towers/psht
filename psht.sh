@@ -3,7 +3,6 @@
 # the following taken from
 # https://stackoverflow.com/questions/965053/extract-filename-and-extension-in-bash
 filenameWithExtension=$1
-extension="${filenameWithExtension##*.}"
 filename="${filenameWithExtension%.*}"
 
 if [ $# -eq 1 ]  # one filename arg, so assume students and tutors
