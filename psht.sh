@@ -5,6 +5,12 @@
 filenameWithExtension=$1
 filename="${filenameWithExtension%.*}"
 
+if [ $# -eq 0 ] # no args :/
+then
+    echo "usage: psht filename.tex, or psht audience1 audience 2 ..."
+    exit 1
+    fi
+
 if [ $# -eq 1 ]  # one filename arg, so assume students and tutors
 then
     if [ -e "${filename}_SOLUTIONS.tex" ]
